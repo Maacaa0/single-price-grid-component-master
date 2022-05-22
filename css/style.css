@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Karla';
+    font-size: 100%;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    display: flex;
+    flex-wrap:wrap;
+
+    width: 635px;
+    height: 475px;
+
+    background-color: white;
+    border-radius: .5em;
+    box-shadow: rgb(50 50 93 / 25%) 0px 8px 27px -2px;
+}
+
+.box-one {
+    width:100%;
+    height: 200px;
+    padding: 1.5em 2.5em;
+    line-height: 1.4;
+    
+}
+
+.box-two {
+    width: 50%;
+
+    background-color: hsl(179, 61%, 44%);
+    color: #fff;
+    border-radius: 0 0 0 .5em;
+    padding: 0 2.5em;
+}
+
+.box-three {
+    width: 50%;
+    padding-left: 2.4em;
+
+    background-color:hsl(179, 47%, 52%);
+    border-radius: 0 0 .5em 0;
+
+    
+}
+
+h1 {
+    color: hsl(179, 61%, 44%);
+    font-size: 1.5em;
+}
+
+h2 {
+    color:hsl(71, 73%, 54%);
+    font-size: 1.1em;
+}
+
+h3 {
+    color: #fff;
+    padding-top: 1.2em;
+    font-weight: 400;
+}
+
+p {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.96875em; /* 15.5px */
+    line-height: 1.5em;
+    position: relative;
+    top: -2px;
+}
+
+.second {
+    color: #fff;
+    opacity: 0.7;
+    position:unset;
+    margin: 6px 0;
+}
+
+.third {
+    color: #fff;
+    opacity: .6;
+    position: unset;
+    font-size: 13.8px; /*13.8 */
+    
+}
+
+strong {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+small {
+    font-size: 1em;
+    color: #fff;
+    opacity: 0.5;
+    position: relative;
+    left: 6px;
+    bottom:6px
+}
+
+a {
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    text-decoration: none;
+    border: solid 1px hsl(71, 73%, 54%);
+    border-radius: .35em;
+    box-shadow: rgb(50 50 93 / 25%) 0px 10px 24px -6px;
+
+    padding: .85em 5.58em;
+    display: block;
+    margin-top: 1.4375em;
+}
+
+a:hover, a:focus {
+    color: hsl(71, 73%, 33%);
+    background-color: white;
+    text-decoration: underline;
+    transition: all 500ms ease-in-out;
+    
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .box-one {
+        height: auto;
+        padding: 0 1.5em;
+    }
+
+    p {
+        padding-bottom: 1.2em;
+    }
+
+    a {
+        text-align: center;
+        margin: 0 0 1.5em;
+    }
+
+    .box-two {
+        width: 100%;
+        border-radius: 0;
+        padding: 0 1.5em;
+    }
+
+    .box-three {
+        width: 100%;
+        padding: 0 1.5em;
+        border-radius: 0 0 .5em .5em;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 330px;
+        
+    }
+    .box-one {
+        padding: 0 .8em;
+    }
+
+    .box-two {
+        padding: 0 .8em;
+    }
+
+    .box-three {
+        padding: 0 .8em;
+    }
+}
+
